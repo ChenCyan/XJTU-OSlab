@@ -1,0 +1,120 @@
+child:pid = 0
+child:pid1 = 23007
+child:num = 1
+parent:pid = 23007
+parent:pid1 = 23006
+parent:num = -1
+child:pid = 0
+child:pid1 = 23009
+child:num = 1
+parent:pid = 23009
+parent:pid1 = 23008
+parent:num = -1
+child:pid = 0
+child:pid1 = 23011
+child:num = 1
+parent:pid = 23011
+parent:pid1 = 23010
+parent:num = -1
+child:pid = 0
+child:pid1 = 23013
+child:num = 1
+parent:pid = 23013
+parent:pid1 = 23012
+parent:num = -1
+child:pid = 0
+child:pid1 = 23015
+child:num = 1
+parent:pid = 23015
+parent:pid1 = 23014
+parent:num = -1
+child:pid = 0
+child:pid1 = 23017
+child:num = 1
+parent:pid = 23017
+parent:pid1 = 23016
+parent:num = -1
+child:pid = 0
+child:pid1 = 23019
+child:num = 1
+parent:pid = 23019
+parent:pid1 = 23018
+parent:num = -1
+child:pid = 0
+child:pid1 = 23021
+child:num = 1
+parent:pid = 23021
+parent:pid1 = 23020
+parent:num = -1
+child:pid = 0
+child:pid1 = 23023
+child:num = 1
+parent:pid = 23023
+parent:pid1 = 23022
+parent:num = -1
+child:pid = 0
+child:pid1 = 23025
+child:num = 1
+parent:pid = 23025
+parent:pid1 = 23024
+parent:num = -1
+child:pid = 0
+child:pid1 = 23085
+child:num = 1,child:*num = 0x42005c
+parent:pid = 23085
+parent:pid1 = 23084
+parent:num = -1,parent:*num = 0x42005c
+child:pid = 0
+child:pid1 = 23087
+child:num = 1,child:*num = 0x42005c
+parent:pid = 23087
+parent:pid1 = 23086
+parent:num = -1,parent:*num = 0x42005c
+child:pid = 0
+child:pid1 = 23089
+child:num = 1,child:*num = 0x42005c
+parent:pid = 23089
+parent:pid1 = 23088
+parent:num = -1,parent:*num = 0x42005c
+child:pid = 0
+child:pid1 = 23091
+child:num = 1,child:*num = 0x42005c
+parent:pid = 23091
+parent:pid1 = 23090
+parent:num = -1,parent:*num = 0x42005c
+child:pid = 0
+child:pid1 = 23093
+child:num = 1,child:*num = 0x42005c
+parent:pid = 23093
+parent:pid1 = 23092
+parent:num = -1,parent:*num = 0x42005c
+child:pid = 0
+child:pid1 = 23095
+child:num = 1,child:*num = 0x42005c
+parent:pid = 23095
+parent:pid1 = 23094
+parent:num = -1,parent:*num = 0x42005c
+child:pid = 0
+child:pid1 = 23097
+child:num = 1,child:*num = 0x42005c
+parent:pid = 23097
+parent:pid1 = 23096
+parent:num = -1,parent:*num = 0x42005c
+child:pid = 0
+child:pid1 = 23099
+child:num = 1,child:*num = 0x42005c
+parent:pid = 23099
+parent:pid1 = 23098
+parent:num = -1,parent:*num = 0x42005c
+child:pid = 0
+child:pid1 = 23101
+child:num = 1,child:*num = 0x42005c
+parent:pid = 23101
+parent:pid1 = 23100
+parent:num = -1,parent:*num = 0x42005c
+child:pid = 0
+child:pid1 = 23103
+child:num = 1,child:*num = 0x42005c
+parent:pid = 23103
+parent:pid1 = 23102
+parent:num = -1,parent:*num = 0x42005c

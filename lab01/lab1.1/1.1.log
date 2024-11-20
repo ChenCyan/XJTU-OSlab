@@ -1,0 +1,4 @@
+chile:pid = 0
+child1 = 22678
+parent:pid = 22678
+parent:pid1 = 22677

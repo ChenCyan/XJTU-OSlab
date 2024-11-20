@@ -1,0 +1,160 @@
+child:pid = 0
+child:pid1 = 23053
+child:num = 1
+before return value = 1 , *value = 0x42005c
+parent:pid = 23053
+parent:pid1 = 23052
+parent:num = -1
+before return value = -1 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23055
+child:num = 1
+before return value = 1 , *value = 0x42005c
+parent:pid = 23055
+parent:pid1 = 23054
+parent:num = -1
+before return value = -1 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23057
+child:num = 1
+before return value = 1 , *value = 0x42005c
+parent:pid = 23057
+parent:pid1 = 23056
+parent:num = -1
+before return value = -1 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23059
+child:num = 1
+before return value = 1 , *value = 0x42005c
+parent:pid = 23059
+parent:pid1 = 23058
+parent:num = -1
+before return value = -1 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23061
+child:num = 1
+before return value = 1 , *value = 0x42005c
+parent:pid = 23061
+parent:pid1 = 23060
+parent:num = -1
+before return value = -1 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23063
+child:num = 1
+before return value = 1 , *value = 0x42005c
+parent:pid = 23063
+parent:pid1 = 23062
+parent:num = -1
+before return value = -1 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23065
+child:num = 1
+before return value = 1 , *value = 0x42005c
+parent:pid = 23065
+parent:pid1 = 23064
+parent:num = -1
+before return value = -1 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23067
+child:num = 1
+before return value = 1 , *value = 0x42005c
+parent:pid = 23067
+parent:pid1 = 23066
+parent:num = -1
+before return value = -1 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23069
+child:num = 1
+before return value = 1 , *value = 0x42005c
+parent:pid = 23069
+parent:pid1 = 23068
+parent:num = -1
+before return value = -1 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23071
+child:num = 1
+before return value = 1 , *value = 0x42005c
+parent:pid = 23071
+parent:pid1 = 23070
+parent:num = -1
+before return value = -1 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23115
+child:num = 1
+before return value = 3 , *value = 0x42005c
+parent:pid = 23115
+parent:pid1 = 23114
+parent:num = -1
+before return value = -3 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23117
+child:num = 1
+before return value = 3 , *value = 0x42005c
+parent:pid = 23117
+parent:pid1 = 23116
+parent:num = -1
+before return value = -3 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23119
+child:num = 1
+before return value = 3 , *value = 0x42005c
+parent:pid = 23119
+parent:pid1 = 23118
+parent:num = -1
+before return value = -3 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23121
+child:num = 1
+before return value = 3 , *value = 0x42005c
+parent:pid = 23121
+parent:pid1 = 23120
+parent:num = -1
+before return value = -3 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23123
+child:num = 1
+before return value = 3 , *value = 0x42005c
+parent:pid = 23123
+parent:pid1 = 23122
+parent:num = -1
+before return value = -3 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23125
+child:num = 1
+before return value = 3 , *value = 0x42005c
+parent:pid = 23125
+parent:pid1 = 23124
+parent:num = -1
+before return value = -3 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23127
+child:num = 1
+before return value = 3 , *value = 0x42005c
+parent:pid = 23127
+parent:pid1 = 23126
+parent:num = -1
+before return value = -3 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23129
+child:num = 1
+before return value = 3 , *value = 0x42005c
+parent:pid = 23129
+parent:pid1 = 23128
+parent:num = -1
+before return value = -3 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23131
+child:num = 1
+before return value = 3 , *value = 0x42005c
+parent:pid = 23131
+parent:pid1 = 23130
+parent:num = -1
+before return value = -3 , *value = 0x42005c
+child:pid = 0
+child:pid1 = 23133
+child:num = 1
+before return value = 3 , *value = 0x42005c
+parent:pid = 23133
+parent:pid1 = 23132
+parent:num = -1
+before return value = -3 , *value = 0x42005c
