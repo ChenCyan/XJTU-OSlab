@@ -1,0 +1,1 @@
+cmd_/root/oslab/lab03/test/mymodules.ko := ld -r -EL  -maarch64linux -T ./scripts/module-common.lds -T ./arch/arm64/kernel/module.lds  --build-id  -o /root/oslab/lab03/test/mymodules.ko /root/oslab/lab03/test/mymodules.o /root/oslab/lab03/test/mymodules.mod.o ;  true
