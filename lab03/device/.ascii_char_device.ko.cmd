@@ -1,0 +1,1 @@
+cmd_/root/oslab/lab03/device/ascii_char_device.ko := ld -r -EL  -maarch64linux -T ./scripts/module-common.lds -T ./arch/arm64/kernel/module.lds  --build-id  -o /root/oslab/lab03/device/ascii_char_device.ko /root/oslab/lab03/device/ascii_char_device.o /root/oslab/lab03/device/ascii_char_device.mod.o ;  true

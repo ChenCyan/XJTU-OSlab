@@ -1,8 +1,10 @@
-cmd_/root/oslab/lab03/test/mymodules.o := gcc -Wp,-MD,/root/oslab/lab03/test/.mymodules.o.d -nostdinc -isystem /usr/lib/gcc/aarch64-linux-gnu/7.3.0/include -I./arch/arm64/include -I./arch/arm64/include/generated  -I./include -I./arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -mgeneral-regs-only -DCONFIG_AS_LSE=1 -fno-asynchronous-unwind-tables -Wno-psabi -mabi=lp64 -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -O2 --param=allow-store-data-races=0 -Wframe-larger-than=2048 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -gdwarf-4 -pg -fno-inline-functions-called-once -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init  -DMODULE  -DKBUILD_BASENAME='"mymodules"' -DKBUILD_MODNAME='"mymodules"' -c -o /root/oslab/lab03/test/.tmp_mymodules.o /root/oslab/lab03/test/mymodules.c
+cmd_/root/oslab/lab03/device/ascii_char_device.mod.o := gcc -Wp,-MD,/root/oslab/lab03/device/.ascii_char_device.mod.o.d -nostdinc -isystem /usr/lib/gcc/aarch64-linux-gnu/7.3.0/include -I./arch/arm64/include -I./arch/arm64/include/generated  -I./include -I./arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -mgeneral-regs-only -DCONFIG_AS_LSE=1 -fno-asynchronous-unwind-tables -Wno-psabi -mabi=lp64 -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -O2 --param=allow-store-data-races=0 -Wframe-larger-than=2048 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -gdwarf-4 -pg -fno-inline-functions-called-once -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init  -DKBUILD_BASENAME='"ascii_char_device.mod"' -DKBUILD_MODNAME='"ascii_char_device"' -DMODULE  -c -o /root/oslab/lab03/device/ascii_char_device.mod.o /root/oslab/lab03/device/ascii_char_device.mod.c
 
-source_/root/oslab/lab03/test/mymodules.o := /root/oslab/lab03/test/mymodules.c
+source_/root/oslab/lab03/device/ascii_char_device.mod.o := /root/oslab/lab03/device/ascii_char_device.mod.c
 
-deps_/root/oslab/lab03/test/mymodules.o := \
+deps_/root/oslab/lab03/device/ascii_char_device.mod.o := \
+    $(wildcard include/config/module/unload.h) \
+    $(wildcard include/config/retpoline.h) \
   include/linux/kconfig.h \
     $(wildcard include/config/cpu/big/endian.h) \
     $(wildcard include/config/booger.h) \
@@ -13,13 +15,36 @@ deps_/root/oslab/lab03/test/mymodules.o := \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc.h \
-    $(wildcard include/config/retpoline.h) \
     $(wildcard include/config/arch/use/builtin/bswap.h) \
-  include/linux/init.h \
-    $(wildcard include/config/have/arch/prel32/relocations.h) \
-    $(wildcard include/config/strict/kernel/rwx.h) \
-    $(wildcard include/config/strict/module/rwx.h) \
-    $(wildcard include/config/ascend/features.h) \
+  include/linux/build-salt.h \
+    $(wildcard include/config/build/salt.h) \
+  include/linux/elfnote.h \
+  include/linux/elf.h \
+  arch/arm64/include/asm/elf.h \
+    $(wildcard include/config/compat.h) \
+    $(wildcard include/config/aarch32/el0.h) \
+  arch/arm64/include/asm/hwcap.h \
+  arch/arm64/include/uapi/asm/hwcap.h \
+  arch/arm64/include/asm/ptrace.h \
+  arch/arm64/include/asm/cpufeature.h \
+    $(wildcard include/config/arm64/pseudo/nmi.h) \
+    $(wildcard include/config/arm64/sw/ttbr0/pan.h) \
+    $(wildcard include/config/arm64/sve.h) \
+    $(wildcard include/config/arm64/debug/priority/masking.h) \
+    $(wildcard include/config/arm64/ssbd.h) \
+    $(wildcard include/config/arm64/pa/bits.h) \
+  arch/arm64/include/asm/cpucaps.h \
+    $(wildcard include/config/hisilicon/erratum/1980005.h) \
+  arch/arm64/include/asm/cputype.h \
+  arch/arm64/include/asm/sysreg.h \
+    $(wildcard include/config/broken/gas/inst.h) \
+    $(wildcard include/config/arm64/pa/bits/52.h) \
+    $(wildcard include/config/arm64/4k/pages.h) \
+    $(wildcard include/config/arm64/16k/pages.h) \
+    $(wildcard include/config/arm64/64k/pages.h) \
+  arch/arm64/include/asm/compiler.h \
+  include/linux/stringify.h \
+  include/linux/build_bug.h \
   include/linux/compiler.h \
     $(wildcard include/config/trace/branch/profiling.h) \
     $(wildcard include/config/profile/all/branches.h) \
@@ -41,7 +66,6 @@ deps_/root/oslab/lab03/test/mymodules.o := \
   arch/arm64/include/uapi/asm/posix_types.h \
   include/uapi/asm-generic/posix_types.h \
   arch/arm64/include/asm/barrier.h \
-    $(wildcard include/config/arm64/pseudo/nmi.h) \
   include/asm-generic/barrier.h \
     $(wildcard include/config/smp.h) \
   include/linux/kasan-checks.h \
@@ -51,6 +75,16 @@ deps_/root/oslab/lab03/test/mymodules.o := \
     $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
+  include/linux/bug.h \
+    $(wildcard include/config/generic/bug.h) \
+    $(wildcard include/config/bug/on/data/corruption.h) \
+  arch/arm64/include/asm/bug.h \
+  arch/arm64/include/asm/asm-bug.h \
+    $(wildcard include/config/debug/bugverbose.h) \
+  arch/arm64/include/asm/brk-imm.h \
+  include/asm-generic/bug.h \
+    $(wildcard include/config/bug.h) \
+    $(wildcard include/config/generic/bug/relative/pointers.h) \
   include/linux/kernel.h \
     $(wildcard include/config/preempt/voluntary.h) \
     $(wildcard include/config/debug/atomic/sleep.h) \
@@ -63,11 +97,11 @@ deps_/root/oslab/lab03/test/mymodules.o := \
     $(wildcard include/config/ftrace/mcount/record.h) \
   /usr/lib/gcc/aarch64-linux-gnu/7.3.0/include/stdarg.h \
   include/linux/linkage.h \
-  include/linux/stringify.h \
   include/linux/export.h \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/modversions.h) \
     $(wildcard include/config/module/rel/crcs.h) \
+    $(wildcard include/config/have/arch/prel32/relocations.h) \
     $(wildcard include/config/trim/unused/ksyms.h) \
     $(wildcard include/config/unused/symbols.h) \
   arch/arm64/include/asm/linkage.h \
@@ -95,12 +129,13 @@ deps_/root/oslab/lab03/test/mymodules.o := \
   arch/arm64/include/asm/lse.h \
   arch/arm64/include/asm/alternative.h \
     $(wildcard include/config/arm64/uao.h) \
-  arch/arm64/include/asm/cpucaps.h \
-    $(wildcard include/config/hisilicon/erratum/1980005.h) \
   arch/arm64/include/asm/insn.h \
+  include/linux/init.h \
+    $(wildcard include/config/strict/kernel/rwx.h) \
+    $(wildcard include/config/strict/module/rwx.h) \
+    $(wildcard include/config/ascend/features.h) \
   arch/arm64/include/asm/atomic_lse.h \
   arch/arm64/include/asm/cmpxchg.h \
-  include/linux/build_bug.h \
   include/asm-generic/atomic-long.h \
   include/asm-generic/bitops/lock.h \
   include/asm-generic/bitops/non-atomic.h \
@@ -132,29 +167,77 @@ deps_/root/oslab/lab03/test/mymodules.o := \
   include/uapi/linux/kernel.h \
   include/uapi/linux/sysinfo.h \
   arch/arm64/include/asm/cache.h \
-  arch/arm64/include/asm/cputype.h \
-  arch/arm64/include/asm/sysreg.h \
-    $(wildcard include/config/broken/gas/inst.h) \
-    $(wildcard include/config/arm64/pa/bits/52.h) \
-    $(wildcard include/config/arm64/4k/pages.h) \
-    $(wildcard include/config/arm64/16k/pages.h) \
-    $(wildcard include/config/arm64/64k/pages.h) \
-  arch/arm64/include/asm/compiler.h \
   include/linux/dynamic_debug.h \
     $(wildcard include/config/jump/label.h) \
   include/linux/jump_label.h \
   arch/arm64/include/asm/jump_label.h \
+  arch/arm64/include/uapi/asm/ptrace.h \
+  arch/arm64/include/uapi/asm/sigcontext.h \
+  include/asm-generic/ptrace.h \
+  arch/arm64/include/generated/asm/user.h \
+  include/asm-generic/user.h \
+  arch/arm64/include/asm/processor.h \
+    $(wildcard include/config/have/hw/breakpoint.h) \
+    $(wildcard include/config/gcc/plugin/stackleak.h) \
+  include/linux/string.h \
+    $(wildcard include/config/binary/printf.h) \
+    $(wildcard include/config/fortify/source.h) \
+  include/uapi/linux/string.h \
+  arch/arm64/include/asm/string.h \
+    $(wildcard include/config/arch/has/uaccess/flushcache.h) \
+  arch/arm64/include/asm/is_compat.h \
+    $(wildcard include/config/arm64/ilp32.h) \
+  include/linux/thread_bits.h \
+    $(wildcard include/config/thread/info/in/task.h) \
+  arch/arm64/include/asm/thread_info.h \
+  arch/arm64/include/asm/memory.h \
+    $(wildcard include/config/arm64/va/bits.h) \
+    $(wildcard include/config/vmap/stack.h) \
+    $(wildcard include/config/debug/align/rodata.h) \
+    $(wildcard include/config/blk/dev/initrd.h) \
+    $(wildcard include/config/debug/virtual.h) \
+    $(wildcard include/config/sparsemem/vmemmap.h) \
+    $(wildcard include/config/efi.h) \
+    $(wildcard include/config/arm/gic/v3/its.h) \
+  include/linux/const.h \
+  include/uapi/linux/const.h \
+  arch/arm64/include/asm/page-def.h \
+    $(wildcard include/config/arm64/page/shift.h) \
+    $(wildcard include/config/arm64/cont/shift.h) \
+  arch/arm64/include/generated/asm/sizes.h \
+  include/asm-generic/sizes.h \
+  include/linux/sizes.h \
+  include/linux/mmdebug.h \
+    $(wildcard include/config/debug/vm.h) \
+    $(wildcard include/config/debug/vm/pgflags.h) \
+  include/asm-generic/memory_model.h \
+    $(wildcard include/config/flatmem.h) \
+    $(wildcard include/config/discontigmem.h) \
+    $(wildcard include/config/sparsemem.h) \
+  include/linux/pfn.h \
+  arch/arm64/include/asm/stack_pointer.h \
+  arch/arm64/include/asm/current.h \
+  arch/arm64/include/asm/hw_breakpoint.h \
+  arch/arm64/include/asm/virt.h \
+  arch/arm64/include/asm/sections.h \
+  include/asm-generic/sections.h \
+  arch/arm64/include/asm/pgtable-hwdef.h \
+    $(wildcard include/config/pgtable/levels.h) \
+  arch/arm64/include/asm/fpsimd.h \
+  arch/arm64/include/generated/uapi/asm/errno.h \
+  include/uapi/asm-generic/errno.h \
+  include/uapi/asm-generic/errno-base.h \
+  include/uapi/linux/elf.h \
+  include/uapi/linux/elf-em.h \
   include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/modules/tree/lookup.h) \
     $(wildcard include/config/livepatch.h) \
     $(wildcard include/config/module/sig.h) \
-    $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/kallsyms.h) \
     $(wildcard include/config/tracepoints.h) \
     $(wildcard include/config/bpf/events.h) \
     $(wildcard include/config/event/tracing.h) \
-    $(wildcard include/config/module/unload.h) \
     $(wildcard include/config/constructors.h) \
     $(wildcard include/config/function/error/injection.h) \
   include/linux/kabi.h \
@@ -163,11 +246,8 @@ deps_/root/oslab/lab03/test/mymodules.o := \
   include/linux/poison.h \
     $(wildcard include/config/illegal/pointer/value.h) \
     $(wildcard include/config/page/poisoning/zero.h) \
-  include/linux/const.h \
-  include/uapi/linux/const.h \
   include/linux/stat.h \
   arch/arm64/include/asm/stat.h \
-    $(wildcard include/config/compat.h) \
   arch/arm64/include/uapi/asm/stat.h \
   include/uapi/asm-generic/stat.h \
   include/linux/compat_time.h \
@@ -186,7 +266,6 @@ deps_/root/oslab/lab03/test/mymodules.o := \
     $(wildcard include/config/fair/group/sched.h) \
     $(wildcard include/config/rt/group/sched.h) \
     $(wildcard include/config/pid/reserve.h) \
-    $(wildcard include/config/thread/info/in/task.h) \
     $(wildcard include/config/cgroup/sched.h) \
     $(wildcard include/config/preempt/notifiers.h) \
     $(wildcard include/config/blk/dev/io/trace.h) \
@@ -228,13 +307,11 @@ deps_/root/oslab/lab03/test/mymodules.o := \
     $(wildcard include/config/kcov.h) \
     $(wildcard include/config/uprobes.h) \
     $(wildcard include/config/bcache.h) \
-    $(wildcard include/config/vmap/stack.h) \
     $(wildcard include/config/security.h) \
     $(wildcard include/config/arch/task/struct/on/stack.h) \
     $(wildcard include/config/preempt.h) \
     $(wildcard include/config/debug/rseq.h) \
   include/uapi/linux/sched.h \
-  arch/arm64/include/asm/current.h \
   include/linux/pid.h \
   include/linux/rculist.h \
   include/linux/rcupdate.h \
@@ -253,28 +330,6 @@ deps_/root/oslab/lab03/test/mymodules.o := \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   arch/arm64/include/asm/irqflags.h \
-  arch/arm64/include/asm/ptrace.h \
-    $(wildcard include/config/aarch32/el0.h) \
-  arch/arm64/include/asm/cpufeature.h \
-    $(wildcard include/config/arm64/sw/ttbr0/pan.h) \
-    $(wildcard include/config/arm64/sve.h) \
-    $(wildcard include/config/arm64/debug/priority/masking.h) \
-    $(wildcard include/config/arm64/ssbd.h) \
-    $(wildcard include/config/arm64/pa/bits.h) \
-  arch/arm64/include/asm/hwcap.h \
-  arch/arm64/include/uapi/asm/hwcap.h \
-  include/linux/bug.h \
-    $(wildcard include/config/bug/on/data/corruption.h) \
-  arch/arm64/include/asm/bug.h \
-  arch/arm64/include/asm/asm-bug.h \
-    $(wildcard include/config/debug/bugverbose.h) \
-  arch/arm64/include/asm/brk-imm.h \
-  include/asm-generic/bug.h \
-    $(wildcard include/config/bug.h) \
-    $(wildcard include/config/generic/bug/relative/pointers.h) \
-  arch/arm64/include/uapi/asm/ptrace.h \
-  arch/arm64/include/uapi/asm/sigcontext.h \
-  include/asm-generic/ptrace.h \
   include/linux/preempt.h \
     $(wildcard include/config/preempt/count.h) \
     $(wildcard include/config/trace/preempt/toggle.h) \
@@ -284,57 +339,11 @@ deps_/root/oslab/lab03/test/mymodules.o := \
     $(wildcard include/config/have/arch/within/stack/frames.h) \
     $(wildcard include/config/hardened/usercopy.h) \
   include/linux/restart_block.h \
-  include/linux/thread_bits.h \
-  arch/arm64/include/asm/thread_info.h \
-  arch/arm64/include/asm/memory.h \
-    $(wildcard include/config/arm64/va/bits.h) \
-    $(wildcard include/config/debug/align/rodata.h) \
-    $(wildcard include/config/blk/dev/initrd.h) \
-    $(wildcard include/config/debug/virtual.h) \
-    $(wildcard include/config/sparsemem/vmemmap.h) \
-    $(wildcard include/config/efi.h) \
-    $(wildcard include/config/arm/gic/v3/its.h) \
-  arch/arm64/include/asm/page-def.h \
-    $(wildcard include/config/arm64/page/shift.h) \
-    $(wildcard include/config/arm64/cont/shift.h) \
-  arch/arm64/include/generated/asm/sizes.h \
-  include/asm-generic/sizes.h \
-  include/linux/sizes.h \
-  include/linux/mmdebug.h \
-    $(wildcard include/config/debug/vm.h) \
-    $(wildcard include/config/debug/vm/pgflags.h) \
-  include/asm-generic/memory_model.h \
-    $(wildcard include/config/flatmem.h) \
-    $(wildcard include/config/discontigmem.h) \
-    $(wildcard include/config/sparsemem.h) \
-  include/linux/pfn.h \
-  arch/arm64/include/asm/stack_pointer.h \
   include/linux/errno.h \
   include/uapi/linux/errno.h \
-  arch/arm64/include/generated/uapi/asm/errno.h \
-  include/uapi/asm-generic/errno.h \
-  include/uapi/asm-generic/errno-base.h \
   include/linux/bottom_half.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lock/stat.h) \
-  arch/arm64/include/asm/processor.h \
-    $(wildcard include/config/have/hw/breakpoint.h) \
-    $(wildcard include/config/gcc/plugin/stackleak.h) \
-  include/linux/string.h \
-    $(wildcard include/config/binary/printf.h) \
-    $(wildcard include/config/fortify/source.h) \
-  include/uapi/linux/string.h \
-  arch/arm64/include/asm/string.h \
-    $(wildcard include/config/arch/has/uaccess/flushcache.h) \
-  arch/arm64/include/asm/is_compat.h \
-    $(wildcard include/config/arm64/ilp32.h) \
-  arch/arm64/include/asm/hw_breakpoint.h \
-  arch/arm64/include/asm/virt.h \
-  arch/arm64/include/asm/sections.h \
-  include/asm-generic/sections.h \
-  arch/arm64/include/asm/pgtable-hwdef.h \
-    $(wildcard include/config/pgtable/levels.h) \
-  arch/arm64/include/asm/fpsimd.h \
   include/linux/cpumask.h \
     $(wildcard include/config/cpumask/offstack.h) \
     $(wildcard include/config/debug/per/cpu/maps.h) \
@@ -601,12 +610,6 @@ deps_/root/oslab/lab03/test/mymodules.o := \
   include/linux/sysctl.h \
     $(wildcard include/config/sysctl.h) \
   include/uapi/linux/sysctl.h \
-  include/linux/elf.h \
-  arch/arm64/include/asm/elf.h \
-  arch/arm64/include/generated/asm/user.h \
-  include/asm-generic/user.h \
-  include/uapi/linux/elf.h \
-  include/uapi/linux/elf-em.h \
   include/linux/kobject.h \
     $(wildcard include/config/uevent/helper.h) \
     $(wildcard include/config/debug/kobject/release.h) \
@@ -635,7 +638,9 @@ deps_/root/oslab/lab03/test/mymodules.o := \
     $(wildcard include/config/have/mod/arch/specific.h) \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
+  include/linux/vermagic.h \
+  include/generated/utsrelease.h \
 
-/root/oslab/lab03/test/mymodules.o: $(deps_/root/oslab/lab03/test/mymodules.o)
+/root/oslab/lab03/device/ascii_char_device.mod.o: $(deps_/root/oslab/lab03/device/ascii_char_device.mod.o)
 
-$(deps_/root/oslab/lab03/test/mymodules.o):
+$(deps_/root/oslab/lab03/device/ascii_char_device.mod.o):
